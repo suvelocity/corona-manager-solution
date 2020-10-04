@@ -4,12 +4,14 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "./components/AppBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
+import HomePage from './components/HomePage';
+import HospitalPage from './components/HospitalPage';
+import PatientPage from './components/PatientPage';
+import CityPage from './components/CityPage';
+import CovidTestPage from './components/CovidTestPage';
 
 
 const useStyles = makeStyles({
-  root: {
-    backgroundColor: "green",
-  },
 });
 
 function App() {
@@ -22,11 +24,12 @@ function App() {
             <NavBar />
           </Grid>
           <Switch>
-            <Route exact path="\" cpmponent={HomePage}/>
-            <Route exact path="\hospitals" />
-            <Route exact path="\patients" />
-            <Route exact path="\covid-tests" />
-            <Route exact path="\cities" />
+            <Route exact path="/" component={HomePage}/>
+            <Route exact path="/hospitals" component={HospitalPage}/>
+            <Route exact path="/patients" component={PatientPage}/>
+            <Route exact path="/cities" component={CityPage}/>
+            <Route exact path="/covid-tests" component={CovidTestPage}/>
+            <Route exact path="/cities" />
           </Switch>
         </Grid>
       </Router>
