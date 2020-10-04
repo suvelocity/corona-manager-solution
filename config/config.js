@@ -9,7 +9,7 @@ module.exports = {
     "define": {"underscored": true}
 },
 "test": {
-    "username": "test",
+    "username": "root",
     "password": null,
     "database": "db_test",
     "host": "localhost",
