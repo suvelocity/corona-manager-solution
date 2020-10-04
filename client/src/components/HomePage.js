@@ -1,6 +1,6 @@
 import React, {useEffect , useState} from 'react';
 import {Link} from 'react-router-dom';
-import axios from 'axios';
+import { read } from '../services/network';
 import './HomePage.css';
 import Icon from './Icon';
 
@@ -11,7 +11,10 @@ function HomePage() {
     useEffect(() => {getInfo();} , []);
     
     const getInfo = async () => {
-       await axios.get(`http://localhost:8080/api/v1/patients`).then(r => setData(r.data));
+       await read(`patients`).then(r => {
+        console.log(r)
+           setData(r)
+        });
     };
 
     const deadCount = Array.isArray(data) ? data.filter(e => e.status === 'dead').length : -1;
