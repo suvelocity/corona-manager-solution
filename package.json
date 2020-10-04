@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node_modules/.bin/jest --runInBand",
     "dev": "nodemon -r dotenv/config server.js",
-    "init": "NODE_ENV=test npx sequelize db:create && NODE_ENV=test npx sequelize db:migrate"
+    "start": "NODE_ENV=test npx sequelize db:create && NODE_ENV=test npx sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
