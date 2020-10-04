@@ -1,0 +1,39 @@
+body {
+    background-image: url('../media/repeated-square.png');
+}
+
+#home {
+    display: grid;
+    padding: 30px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto;
+    width: 100%;
+}
+
+.header {
+    font-size: 80px;
+    color: black;
+    text-shadow: 6px 6px 2px lightgray;
+    font-family: 'Impact';
+}
+
+.cases {
+    font-size: 70px;
+    margin: 20px;
+    color: black;
+    text-shadow: 6px 6px 2px lightgray;
+    font-family: 'Impact';
+}
+
+#icon-menu {
+    display: grid;
+    padding: 30px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto;
+    width: 1400px;
+}
