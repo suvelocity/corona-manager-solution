@@ -1,0 +1,25 @@
+#covidtest {
+    margin-top: 70px;
+    display: grid;
+    padding: 30px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 4px 4px 4px darkgray;
+}
+
+span {
+    color: darkslategray;
+}
+
+.field {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px darkgray;
+}
