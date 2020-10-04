@@ -10,8 +10,8 @@ module.exports = {
 },
 "test": {
     "username": "root",
-    "password": "Michael!6425762",
-    "database": "covidtest",
+    "password": null,
+    "database": "db_test",
     "host": "localhost",
     "dialect": "mysql",
     "define": {"underscored": true}
