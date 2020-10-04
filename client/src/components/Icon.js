@@ -30,7 +30,7 @@ function Icon(params)
         }}>
         <Fade in={modal}>
           <div className={"paper"}>
-        {info.map((e) => <div className='modelItem'>{e.hasOwnProperty('isSick') ? e.Patient.name + ' test result: ' + e.isSick : e.name}</div>)}
+        {info.map((e) => <div>{e.name}</div>)}
           </div>
         </Fade>
       </Modal>
