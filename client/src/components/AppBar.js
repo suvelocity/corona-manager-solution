@@ -36,12 +36,12 @@ export default function NavBar() {
   const items = [
     {
       path: "/",
-      title: "home",
+      title: "Home",
       icon: <HomeIcon />,
     },
     {
       path: "/patients",
-      title: "patients",
+      title: "Patients",
       icon: <PersonIcon />,
     },
     {
@@ -50,14 +50,14 @@ export default function NavBar() {
       icon: <LocalHospitalIcon />,
     },
     {
-      path: "/covid-tests",
-      title: "Covid Tests",
-      icon: <CheckCircleOutlineIcon />,
-    },
-    {
       path: "/cities",
       title: "Cities",
       icon: <LocationCityIcon />,
+    },
+    {
+      path: "/covid-tests",
+      title: "Covid Tests",
+      icon: <CheckCircleOutlineIcon />,
     },
   ];
   return (

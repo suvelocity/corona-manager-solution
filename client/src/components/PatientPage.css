@@ -1,0 +1,49 @@
+#patient {
+    margin-top: 70px;
+    display: grid;
+    padding: 30px;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto;
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 4px 4px 4px darkgray;
+}
+
+select {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 400px;
+    border: 2px solid darkgray;
+    outline: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 30px;
+}
+
+option {
+    background-color: gray;
+    color: black;
+}
+
+span {
+    color: darkslategray;
+}
+
+li {
+    color: darkslategray;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px darkgray;
+}
+
+.field {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px darkgray;
+}
