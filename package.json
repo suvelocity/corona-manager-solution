@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/jest --runInBand",
+    "test": "node_modules/.bin/jest --runInBand --detectOpenHandles --forceExit",
     "dev": "nodemon -r dotenv/config server.js",
     "init": "NODE_ENV=test npx sequelize db:create && NODE_ENV=test npx sequelize db:migrate"
   },
