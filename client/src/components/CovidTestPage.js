@@ -1,11 +1,15 @@
 import React, {useEffect , useState} from 'react';
 import { read } from '../services/network';
+
 import gif from '../media/corona_gif.gif';
+
 import './CovidTestPage.css';
 
 function CovidTestPage() {
     
+
     const [data, setData] = useState(null);
+
     const [positiveCount, setPositiveCount] = useState(null);
     const [negativeCount, setNegativeCount] = useState(null);
 
@@ -25,13 +29,16 @@ function CovidTestPage() {
     
 
     return(
+
         <>
         { Array.isArray(data) ?
+
     <div id='covidtest'>
         <h2>Covid 19 Tests Summary</h2>
         <p className="field">Tests: <span>{data.length}</span></p>
         <p className="field">Positive: <span>{positiveCount} Tests ({positiveCount/data.length*100}%)</span></p>
         <p className="field">Negative: <span>{negativeCount} Tests ({negativeCount/data.length*100}%)</span></p>
+
     </div>
     : 
     <div>
@@ -41,6 +48,7 @@ function CovidTestPage() {
 }
 </>
     );
+
 }
 
 export default CovidTestPage;

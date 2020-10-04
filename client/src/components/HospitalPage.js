@@ -1,10 +1,12 @@
 import React, {useEffect , useState} from 'react';
 import { read } from '../services/network';
+
 import gif from '../media/corona_gif.gif';
 import './HospitalPage.css';
 
 function HospitalPage() {
     const [data, setData] = useState(null);
+
 
     const [display, setDisplay] = useState(0);
 
@@ -14,10 +16,12 @@ function HospitalPage() {
        await read(`hospitals`).then(r => {setData(r)});
     };
 
+
     return(
         <>
         { Array.isArray(data) ?
     <div id='hospital'>
+
         <h2>Select a Hospital:</h2>
         <select onChange={async (e) => {
             await read(`hospitals/byId/${e.target.value}`).then(r => {setDisplay(r)});
@@ -33,6 +37,7 @@ function HospitalPage() {
             {display.Patients.map((e) => <li>{e.name}</li>)}
             </ul>
             </div>}
+
     </div>
     : 
     <div>
@@ -42,6 +47,7 @@ function HospitalPage() {
 }
 </>
     );
+
 }
 
 export default HospitalPage;

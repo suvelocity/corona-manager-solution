@@ -1,4 +1,5 @@
 
+
 import React, { useEffect, useState } from "react";
 import { read, create } from "../services/network";
 import "./PatientPage.css";
@@ -72,11 +73,14 @@ function PatientPage() {
         <>
         { Array.isArray(data) ?
     <div id='patient'>
+
         <h2>Select a Patient:</h2>
         <select onChange={async (e) => {
             await read(`patients/byId/${e.target.value}`).then(r => {setDisplay(r)});
             }}>
+
             {data && data.map((e) => <option value={e.id}>{e.name}</option>)}
+
         </select>
         {display !== 0 && <div>
             <div className='field'>Patient Name: <span>{display.name}</span></div>
@@ -88,6 +92,7 @@ function PatientPage() {
             {display.SymptomsByPatients.map((e) => <li>{e.Symptom.name}</li>)}
             </ul>
             </div>}
+
             <IconButton onClick={() => setOpen(true)}>
         <AddCircleIcon />
         <Typography variant="h6">add patient</Typography>
@@ -209,6 +214,7 @@ function PatientPage() {
 }
     </>
     );
+
 }
 
 export default PatientPage;
