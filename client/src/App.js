@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import NavBar from "./components/AppBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
-
+import HomePage from './components/HomePage';
 
 const useStyles = makeStyles({
   root: {
