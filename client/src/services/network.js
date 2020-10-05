@@ -3,7 +3,7 @@ function network(endpoint, method, body = {}) {
   return axios({
     method: method ,
     url: `/api/v1/${endpoint}`,
-    body : body 
+    data : body 
    })
    .then(res => {
     console.log(res.data);

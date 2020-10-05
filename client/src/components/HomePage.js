@@ -1,5 +1,4 @@
 import React, {useEffect , useState} from 'react';
-import {Link} from 'react-router-dom';
 import { read } from '../services/network';
 import './HomePage.css';
 import Icon from './Icon';
